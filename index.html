@@ -6,16 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>maze_generator_project</title>
-
-	<script src="libraries/p5.js"></script>
-	<script src="libraries/p5.dom.js"></script>
-	<script src="sketch.js"></script>
-	<script src="cell.js"></script>
-	<script src="generator.js"></script>
-	<script src="solver.js"></script>
-	<script src="play.js"></script>
-
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	
 
 
 	<style>
@@ -44,24 +36,34 @@
 			<h2>Maze Generator and Solver<h2>
 		</div>
 		
-		<b>Maze Size:</b> <input id = "maze_size" value = "30"></input>
+		<b >Maze Size:</b> <input id = "maze_size" value = "20"></input>
 		<b>Maze Type:</b> <span id = "maze_type">no dead end</span>
 		<br><br>
 		<button type = "submit" class = "btn btn-danger" id = "button4">Generate</button>
 		<br><br><br><br>
 		<b>Play maze:</b> <button type = "submit" class = "btn btn-warning" id = "button3">Play</button>
 		<br><br><br><br>
-		<b>Maze Solving Algorithm: <select id = "maze_solve">
+		<b>Maze Solving Algorithm: 
+		<select id = "maze_solve">
 			<option value = "1">depth first search (dfs)</option>
 			<option value = "2">breadth first search (bfs)</option>
 			<option value = "3">a*</option>
 			<option value = "4">greedy search</option>
-			<option value = "5">dijkstra</option>
+			
 		</select>
 		<br><br>
 		<button type = "submit" class = "btn btn-success" id = "button2">Solve</button>
 		
 	</p>
 </div>
+
+    <script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="sketch.js"></script>
+	<script src="cell.js"></script>
+	<script src="generator.js"></script>
+	<script src="solver.js"></script>
+	<script src="play.js"></script>
+	<script src="./libraries/p5.sound.js"></script>
 </body>
 </html>
